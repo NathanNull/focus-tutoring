@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/test-ghp/static/js/main.52794097.js",
+    "main.js": "/test-ghp/static/js/main.c4447aea.js",
     "index.html": "/test-ghp/index.html",
-    "main.52794097.js.map": "/test-ghp/static/js/main.52794097.js.map"
+    "main.c4447aea.js.map": "/test-ghp/static/js/main.c4447aea.js.map"
   },
   "entrypoints": [
-    "static/js/main.52794097.js"
+    "static/js/main.c4447aea.js"
   ]
 }
