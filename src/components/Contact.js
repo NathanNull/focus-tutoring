@@ -1,9 +1,11 @@
-import {createUseStyles} from 'react-jss';
+import { createUseStyles } from 'react-jss';
 
-function App() {
+function Contact() {
   const styles = useStyles();
   return (
-    <div className={styles.test}>Hey guys check out my cool website</div>
+    <>
+      <div className={styles.test}>Contact</div>
+    </>
   );
 }
 
@@ -15,4 +17,4 @@ const useStyles = createUseStyles({
   }
 })
 
-export default App;
+export default Contact;
