@@ -1,20 +1,18 @@
-import { createUseStyles } from 'react-jss';
+import Header from './Header';
+import { useGlobalStyles } from '../styles';
 
 function About() {
-  const styles = useStyles();
+  const gStyles = useGlobalStyles();
   return (
     <>
-      <div className={styles.test}>About</div>
+      <Header>
+        <div className={gStyles.titleText}>About</div>
+      </Header>
+      <div className={gStyles.content}>
+        Some text here about who I am
+      </div>
     </>
   );
 }
-
-const useStyles = createUseStyles({
-  test: {
-    color: "blue",
-    fontWeight: 'bolder',
-    fontSize: 50
-  }
-})
 
 export default About;

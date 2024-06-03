@@ -1,20 +1,18 @@
-import { createUseStyles } from 'react-jss';
+import Header from './Header';
+import { useGlobalStyles } from '../styles';
 
 function Services() {
-  const styles = useStyles();
+  const gStyles = useGlobalStyles();
   return (
     <>
-      <div className={styles.test}>Services</div>
+      <Header>
+        <div className={gStyles.titleText}>Services</div>
+      </Header>
+      <div className={gStyles.content}>
+        The things I offer, and pricing (pricing maybe goes somewhere else.)
+      </div>
     </>
   );
 }
-
-const useStyles = createUseStyles({
-  test: {
-    color: "blue",
-    fontWeight: 'bolder',
-    fontSize: 50
-  }
-})
 
 export default Services;

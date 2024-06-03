@@ -1,19 +1,19 @@
 import { createUseStyles } from 'react-jss';
-import classroomImage from '../assets/classroom.jpg';
-
-console.log(classroomImage)
+import Header from './Header.js';
+import { useGlobalStyles } from '../styles.js';
 
 function Home() {
     const styles = useStyles();
+    const gStyles = useGlobalStyles();
     return (
         <>
-            <div className={styles.homeView}>
-                <div className={styles.titleText}>
-                    you need tutor? <br /> is me <br/> pick a better font
+            <Header>
+                <div className={gStyles.titleText}>
+                    you need tutor? <br /> is me <br /> pick a better font
                 </div>
                 <a href="#/about" className={styles.learnMoreButton}>Learn More</a>
-            </div>
-            <div className={styles.content}>
+            </Header>
+            <div className={gStyles.content}>
                 I'll put some text here that talks about what I do
             </div>
         </>
@@ -21,25 +21,6 @@ function Home() {
 }
 
 const useStyles = createUseStyles({
-    homeView: {
-        // Tint the image with a gradient of blacks
-        backgroundImage: ['linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.5))', `url(${classroomImage})`],
-        backgroundSize: 'cover',
-        width: '100%',
-        height: '90vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    titleText: {
-        textAlign: 'center',
-        color: 'white',
-        fontFamily: 'monospace',
-        textTransform: 'uppercase',
-        fontWeight: 'bolder',
-        fontSize: 50
-    },
     learnMoreButton: {
         textAlign: 'center',
         color: 'grey',
@@ -59,12 +40,6 @@ const useStyles = createUseStyles({
             color: 'white',
         },
     },
-    content: {
-        fontSize: 30,
-        textAlign: 'center',
-        padding: 100,
-        fontFamily: 'sans-serif'
-    }
 })
 
 export default Home;
