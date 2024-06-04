@@ -12,13 +12,24 @@ const useGlobalStyles = createUseStyles({
     content: {
         fontSize: 20,
         textAlign: 'center',
-        margin: ['10vh', '30vw', '10vh', '30vw'],
+        margin: ['10vh', '30vw'],
     },
     header: {
         fontSize: 30,
         fontWeight: 'bold',
-        paddingBottom: 20,
+    },
+    subheader: {
+        fontSize: 20,
+        fontWeight: 'lighter',
+    },
+    button: {
+        background: 'black',
+        color: 'white',
+        borderStyle: 'none',
+        fontSize: 30,
+        padding: [10, 20],
+        textDecoration: 'none',
     }
 })
 
-export {useGlobalStyles}
+export { useGlobalStyles }

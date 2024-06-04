@@ -2,14 +2,12 @@ import { createUseStyles } from 'react-jss';
 import logo from '../assets/logo.png'
 import classroomImage from '../assets/classroom.jpg';
 
-function Header({ children }) {
+function Footer() {
   const styles = useStyles();
   return (
     <>
-      <div className={styles.navbar}>
-        <a href="#/" className={styles.logo}>
-          <img src={logo} alt="logo" style={{ height: '100%' }} />
-        </a>
+      <div className={styles.footer}>
+        <div className={styles.spacer} />
         <a className={styles.title} href="#/">Tutoring Or Something</a>
         <div className={styles.linkBar}>
           <a className={styles.link} href="#/about">About</a>
@@ -17,17 +15,14 @@ function Header({ children }) {
           <a className={styles.link} href="#/contact">Contact</a>
         </div>
       </div>
-      <div className={styles.homeView}>
-        {children}
-      </div>
     </>
   );
 }
 
 const useStyles = createUseStyles({
-  navbar: {
+  footer: {
     width: '100%',
-    height: '3rem',
+    height: '8rem',
     backgroundColor: 'black',
     display: 'flex',
     flexDirection: 'row',
@@ -37,17 +32,15 @@ const useStyles = createUseStyles({
       marginLeft: 10,
       marginRight: 20,
     },
-    position: 'fixed',
   },
-  logo: {
-    height: '90%',
-    aspectRatio: 1,
+  spacer: {
     flex: 1,
   },
   linkBar: {
     flex: 1,
     display: 'flex',
-    justifyContent: 'end'
+    justifyContent: 'end',
+    flexDirection: 'column',
   },
   link: {
     textTransform: 'uppercase',
@@ -77,4 +70,4 @@ const useStyles = createUseStyles({
   },
 })
 
-export default Header;
+export default Footer;

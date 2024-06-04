@@ -1,7 +1,7 @@
 import Header from './Header';
 import { useGlobalStyles } from '../styles';
 import emailjs from 'emailjs-com';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 
 function Contact() {
@@ -48,7 +48,7 @@ function Contact() {
         sender_email: email.current.value,
         message: message.current.value,
       }, '-Ie6Wq69pFUOb8onH').then(res => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           /**
            * @type {Element}
            */
@@ -66,7 +66,7 @@ function Contact() {
         <div className={gStyles.titleText}>Contact [name]</div>
       </Header>
       <div className={gStyles.content}>
-        <div className={gStyles.header}>
+        <div className={gStyles.header} style={{paddingBottom: 20}}>
           Questions? Concerns? Suggestions?
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -75,7 +75,7 @@ function Contact() {
             <input className={styles.input} placeholder='Email' ref={email} />
           </div>
           <textarea className={styles.message} placeholder='Message' ref={message} />
-          <button onClick={sendEmail} className={styles.submit}>Send</button>
+          <button onClick={sendEmail} className={gStyles.button}>Send</button>
         </div>
         (should probably remove/replace)
         You can also reach the owner at nathanstrong777@gmail.com
@@ -123,13 +123,6 @@ const useStyles = createUseStyles({
     },
     backgroundColor: '#ffe4e4',
   },
-  submit: {
-    background: 'black',
-    color: 'white',
-    borderStyle: 'none',
-    fontSize: 30,
-    padding: [10, 20, 10, 20]
-  }
 })
 
 export default Contact;

@@ -9,9 +9,9 @@ function Home() {
         <>
             <Header>
                 <div className={gStyles.titleText}>
-                    you need tutor? <br /> is me <br /> pick a better font
+                    Title
                 </div>
-                <a href="#/about" className={styles.learnMoreButton}>Learn More</a>
+                <a href="#/services" className={styles.learnMoreButton}>Learn More</a>
             </Header>
             <div className={gStyles.content}>
                 I'll put some text here that talks about what I do
