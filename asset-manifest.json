@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.js": "/test-ghp/static/js/main.9e91b9a5.js",
+    "main.css": "/test-ghp/static/css/main.4b9fa1d2.css",
+    "main.js": "/test-ghp/static/js/main.729b96b4.js",
     "static/media/classroom.jpg": "/test-ghp/static/media/classroom.43209b6be0233df02414.jpg",
     "index.html": "/test-ghp/index.html",
-    "main.9e91b9a5.js.map": "/test-ghp/static/js/main.9e91b9a5.js.map"
+    "main.4b9fa1d2.css.map": "/test-ghp/static/css/main.4b9fa1d2.css.map",
+    "main.729b96b4.js.map": "/test-ghp/static/js/main.729b96b4.js.map"
   },
   "entrypoints": [
-    "static/js/main.9e91b9a5.js"
+    "static/css/main.4b9fa1d2.css",
+    "static/js/main.729b96b4.js"
   ]
 }
