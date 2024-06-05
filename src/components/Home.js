@@ -9,7 +9,7 @@ function Home() {
         <>
             <Header>
                 <div className={gStyles.titleText}>
-                    Title
+                    Focus Tutoring
                 </div>
                 <a href="#/services" className={styles.learnMoreButton}>Learn More</a>
             </Header>

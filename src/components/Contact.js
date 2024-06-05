@@ -63,7 +63,7 @@ function Contact() {
   return (
     <>
       <Header>
-        <div className={gStyles.titleText}>Contact [name]</div>
+        <div className={gStyles.titleText}>Contact Us</div>
       </Header>
       <div className={gStyles.content}>
         <div className={gStyles.header} style={{paddingBottom: 20}}>
@@ -78,7 +78,7 @@ function Contact() {
           <button onClick={sendEmail} className={gStyles.button}>Send</button>
         </div>
         (should probably remove/replace)
-        You can also reach the owner at nathanstrong777@gmail.com
+        You can also reach us at focustutoringfv@gmail.com
       </div >
     </>
   );
