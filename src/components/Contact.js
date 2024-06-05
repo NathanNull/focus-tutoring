@@ -3,6 +3,7 @@ import { useGlobalStyles } from '../styles';
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
+import Footer from './Footer';
 
 function Contact() {
   const gStyles = useGlobalStyles();
@@ -79,6 +80,7 @@ function Contact() {
         </div>
         You can also reach us at focustutoringfv@gmail.com
       </div >
+      <Footer />
     </>
   );
 }

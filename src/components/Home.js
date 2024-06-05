@@ -1,6 +1,7 @@
 import { createUseStyles } from 'react-jss';
 import Header from './Header.js';
 import { useGlobalStyles } from '../styles.js';
+import Footer from './Footer.js';
 
 function Home() {
     const styles = useStyles();
@@ -16,6 +17,7 @@ function Home() {
             <div className={gStyles.content}>
                 I'll put some text here that talks about what I do
             </div>
+            <Footer />
         </>
     );
 }
