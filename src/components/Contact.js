@@ -77,7 +77,6 @@ function Contact() {
           <textarea className={styles.message} placeholder='Message' ref={message} />
           <button onClick={sendEmail} className={gStyles.button}>Send</button>
         </div>
-        (should probably remove/replace)
         You can also reach us at focustutoringfv@gmail.com
       </div >
     </>
