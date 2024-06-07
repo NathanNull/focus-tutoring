@@ -10,7 +10,11 @@ function Services() {
         <div className={gStyles.titleText}>Services</div>
       </Header>
       <div className={gStyles.content}>
-        <div className={gStyles.header} style={{ marginBottom: '0.5rem' }}>Recommended Sessions</div>
+        <div className={gStyles.header} style={{ marginBottom: '0.5rem' }}>Services Offered</div>
+        We will tutor any level of math between grades 6 and 12. Lower grades may be accepted on a case-by-case basis.
+        <br/><br/>
+        We offer homework help as well as catch-up and work-ahead lessons, with flexible scheduling.
+        <div className={gStyles.header} style={{ marginBottom: '0.5rem', marginTop: '2rem' }}>Recommended Sessions</div>
         Two 2-hour sessions per week are recommended, though more or less
         can be accommodated according to need.
         <div className={gStyles.header} style={{ marginBottom: '0.5rem', marginTop: '2rem' }}>Pricing</div>

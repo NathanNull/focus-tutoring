@@ -10,7 +10,7 @@ function Header({ children }) {
         <a href="#/" className={styles.logo}>
           <img src={logo} alt="logo" style={{ height: '100%' }} />
         </a>
-        <a className={styles.title} href="#/">Tutoring Or Something</a>
+        <a className={styles.title} href="#/">Focus Tutoring</a>
         <div className={styles.linkBar}>
           <a className={styles.link} href="#/about">About</a>
           <a className={styles.link} href="#/services">Services</a>
@@ -36,6 +36,10 @@ const useStyles = createUseStyles({
     '& *': { // Any item that's a child of this one
       marginLeft: 10,
       marginRight: 20,
+      '@media (max-width: 500px)': {
+        marginRight: 5,
+        marginLeft: 5,
+      },
     },
     position: 'fixed',
   },
@@ -52,6 +56,9 @@ const useStyles = createUseStyles({
   link: {
     textTransform: 'uppercase',
     color: 'white',
+    '@media (max-width: 500px)': {
+      fontSize: 15,
+    },
     fontFamily: 'monospace',
     fontWeight: 'bolder',
     textDecoration: 'none',
@@ -59,7 +66,11 @@ const useStyles = createUseStyles({
   title: {
     fontFamily: 'sans-serif',
     fontSize: 30,
+    '@media (max-width: 500px)': {
+      fontSize: 20,
+    },
     fontWeight: 'bolder',
+    textWrap: 'nowrap',
     color: 'white',
     textDecoration: 'none',
   },

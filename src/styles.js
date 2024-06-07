@@ -7,29 +7,53 @@ const useGlobalStyles = createUseStyles({
         fontFamily: 'monospace',
         textTransform: 'uppercase',
         fontWeight: 200,
-        fontSize: 100
+        fontSize: 100,
+        '@media (max-width: 500px)': {
+            fontSize: 50,
+        },
     },
     content: {
         fontSize: 20,
         textAlign: 'center',
-        margin: ['10vh', '30vw'],
+        margin: ['10vh', '20vw'],
     },
     header: {
         fontSize: 30,
         fontWeight: 'bold',
     },
     subheader: {
-        fontSize: 20,
+        fontSize: 25,
         fontWeight: 'lighter',
     },
     button: {
-        background: 'black',
-        color: 'white',
-        borderStyle: 'none',
+        textAlign: 'center',
+        color: 'grey',
+        fontFamily: 'monospace',
+        textTransform: 'uppercase',
         fontSize: 30,
-        padding: [10, 20],
+        '@media (max-width: 500px)': {
+            fontSize: 20,
+        },
         textDecoration: 'none',
+        padding: 10,
+        marginTop: 10,
+        border: {
+            color: 'grey',
+            width: 2,
+            style: 'solid',
+        },
+        '&:hover': {
+            backgroundColor: 'grey',
+            color: 'white',
+        },
+    },
+    link: {
+        textAlign: 'center',
+        color: 'grey',
+        '&:hover': {
+            color: 'lightgrey',
+        },
     }
-})
+});
 
 export { useGlobalStyles }

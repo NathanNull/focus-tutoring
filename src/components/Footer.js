@@ -8,7 +8,7 @@ function Footer() {
     <>
       <div className={styles.footer}>
         <div className={styles.spacer} />
-        <a className={styles.title} href="#/">Tutoring Or Something</a>
+        <a className={styles.title} href="#/">Focus Tutoring</a>
         <div className={styles.linkBar}>
           <a className={styles.link} href="#/about">About</a>
           <a className={styles.link} href="#/services">Services</a>
@@ -48,6 +48,8 @@ const useStyles = createUseStyles({
     fontFamily: 'monospace',
     fontWeight: 'bolder',
     textDecoration: 'none',
+    marginTop: 5,
+    marginBottom: 5,
   },
   title: {
     fontFamily: 'sans-serif',

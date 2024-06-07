@@ -33,8 +33,8 @@ function About() {
         I'm excited to help you or your child succeed!
         <div className={styles.break} />
         <a className={gStyles.button} href='#/contact'>Contact Me</a>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
