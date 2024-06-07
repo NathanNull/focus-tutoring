@@ -8,7 +8,7 @@ function Home() {
     const gStyles = useGlobalStyles();
     return (
         <>
-            <Header>
+            <Header long_hero_section={true}>
                 <div className={styles.header}>Personalized math tutoring to help your child excel</div>
                 <div className={gStyles.titleText} style={{ textTransform: 'none', fontFamily: 'sans-serif' }}>
                     Focus Tutoring
@@ -38,11 +38,11 @@ function Home() {
                 <div className={gStyles.subheader} style={{ marginBottom: '0.5rem', marginTop: '1rem'}}>
                     2. Assessment
                 </div>
-                Book a free assessment so that we can discuss your child's needs and goals.
+                Book a free appointment to assess your child's needs and goals.
                 <div className={gStyles.subheader} style={{ marginBottom: '0.5rem', marginTop: '1rem'}}>
                     3. Customized Tutoring
                 </div>
-                Start your tutoring sessions, personalized for your child's learning style.
+                Begin tutoring sessions, personalized for your child's learning style.
 
                 <br/><br/><br/><br/>
                 <a className={gStyles.button} href='#/contact'>Get Started Today</a>

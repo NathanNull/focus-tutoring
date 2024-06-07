@@ -2,8 +2,8 @@ import { createUseStyles } from 'react-jss';
 import logo from '../assets/logo.png'
 import classroomImage from '../assets/classroom.jpg';
 
-function Header({ children }) {
-  const styles = useStyles();
+function Header({ children, long_hero_section = false }) {
+  const styles = useStyles(long_hero_section);
   return (
     <>
       <div className={styles.navbar}>
@@ -74,18 +74,18 @@ const useStyles = createUseStyles({
     color: 'white',
     textDecoration: 'none',
   },
-  homeView: {
+  homeView: long => ({
     // Tint the image with a gradient of blacks
     backgroundImage: ['linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.5))', `url(${classroomImage})`],
     backgroundSize: 'cover',
     width: '100%',
-    height: '85vh',
+    height: long?'85vh':'75vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     paddingTop: '3rem'
-  },
+  }),
 })
 
 export default Header;
