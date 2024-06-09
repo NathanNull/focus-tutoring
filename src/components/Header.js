@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function LinkBar({ styles, innerClass }) {
   return <div className={innerClass}>
-    <a className={styles.link} href="#/about">About</a>
+    <a className={styles.link} href="#/about">About The Tutor</a>
     <a className={styles.link} href="#/services">Services</a>
     <a className={styles.link} href="#/contact">Contact</a>
   </div>
