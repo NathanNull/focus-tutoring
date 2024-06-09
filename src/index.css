@@ -2,3 +2,8 @@ body {
     /* This is just a random preset, maybe pick something better later */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
+::selection {
+    background: black;
+    color: white;
+}

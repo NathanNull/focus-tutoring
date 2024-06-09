@@ -8,7 +8,7 @@ const useGlobalStyles = createUseStyles({
         textTransform: 'uppercase',
         fontWeight: 200,
         fontSize: 100,
-        '@media (max-width: 500px)': {
+        '@media (pointer:coarse)': {
             fontSize: 50,
         },
     },
@@ -31,7 +31,7 @@ const useGlobalStyles = createUseStyles({
         fontFamily: 'monospace',
         textTransform: 'uppercase',
         fontSize: 30,
-        '@media (max-width: 500px)': {
+        '@media (pointer:coarse)': {
             fontSize: 20,
         },
         textDecoration: 'none',
