@@ -156,6 +156,5 @@ const useStyles = createUseStyles({
   }),
 })
 const gradient = 'linear-gradient(rgba(0, 0, 0, ' + ['0.7', '0.65', '0.55', '0.4'].join('), rgba(0, 0, 0, ') + '))';
-console.log(gradient);
 
 export default Header;
