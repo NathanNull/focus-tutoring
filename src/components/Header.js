@@ -21,10 +21,8 @@ function Header({ children, long_hero_section = false }) {
     <>
       <div className={styles.navbar}>
         <div className={styles.navbarMobile}>
-          <a href="#/" className={styles.logo}>
-            <img src={logo} alt="logo" style={{ height: '100%' }} />
-          </a>
-          <a className={styles.title} href="#/">Focus Tutoring</a>
+          <div style={{ flex: 1 }} />
+          <img src={logo} alt="logo" className={styles.logo} />
           <div className={styles.menuIcon} onClick={() => setMenuOpen(!isMenuOpen)}>
             <MenuIcon htmlColor='white' />
           </div>
@@ -55,7 +53,7 @@ const useStyles = createUseStyles({
   },
   navbarMobile: {
     width: '100%',
-    height: '3rem',
+    height: '5rem',
     backgroundColor: 'black',
     display: 'flex',
     flexDirection: 'row',
@@ -72,8 +70,6 @@ const useStyles = createUseStyles({
   },
   logo: {
     height: '90%',
-    aspectRatio: 1,
-    flex: 1,
   },
   menuIcon: {
     display: 'none',

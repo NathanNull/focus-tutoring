@@ -8,9 +8,9 @@ function Footer() {
     <>
       <div className={styles.footer}>
         <div className={styles.spacer} />
-        <a className={styles.title} href="#/">Focus Tutoring</a>
+        <img src={logo} className={styles.title} href="#/" />
         <div className={styles.linkBar}>
-          <a className={styles.link} href="#/about">About</a>
+          <a className={styles.link} href="#/about">About The Tutor</a>
           <a className={styles.link} href="#/services">Services</a>
           <a className={styles.link} href="#/contact">Contact</a>
         </div>
@@ -57,6 +57,8 @@ const useStyles = createUseStyles({
     fontWeight: 'bolder',
     color: 'white',
     textDecoration: 'none',
+    maxWidth: '50%',
+    maxHeight: '100%',
   },
   homeView: {
     // Tint the image with a gradient of blacks
