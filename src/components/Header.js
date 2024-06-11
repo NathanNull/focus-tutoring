@@ -22,7 +22,9 @@ function Header({ children, long_hero_section = false }) {
       <div className={styles.navbar}>
         <div className={styles.navbarMobile}>
           <div style={{ flex: 1 }} />
-          <img src={logo} alt="logo" className={styles.logo} />
+          <a href="#/">
+            <img src={logo} alt="logo" className={styles.logo} />
+          </a>
           <div className={styles.menuIcon} onClick={() => setMenuOpen(!isMenuOpen)}>
             <MenuIcon htmlColor='white' />
           </div>

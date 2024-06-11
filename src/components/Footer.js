@@ -8,7 +8,9 @@ function Footer() {
     <>
       <div className={styles.footer}>
         <div className={styles.spacer} />
-        <img src={logo} className={styles.title} href="#/" />
+        <a href="#/" className={styles.title}>
+          <img src={logo} />
+        </a>
         <div className={styles.linkBar}>
           <a className={styles.link} href="#/about">About The Tutor</a>
           <a className={styles.link} href="#/services">Services</a>

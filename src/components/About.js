@@ -38,7 +38,7 @@ function About() {
             <div className={styles.break} />
 
           </div>
-          <img src={tutorphoto} className={styles.image} />
+          <img src={tutorphoto} className={styles.image} alt="Nathan Strong" />
         </div>
         <a className={gStyles.button} href='#/contact'>Contact Me</a>
       </div>
@@ -56,20 +56,19 @@ const useStyles = createUseStyles({
     flexDirection: 'row',
     alignItems: 'center',
     "@media (pointer:coarse)": {
-      flexDirection: 'column',
+      flexDirection: 'column-reverse',
     },
-    marginBottom: 20
+    marginBottom: 20,
+    gap: 30,
   },
   about: {
-    marginTop: 20,
-    marginBottom: 20,
   },
   image: {
     width: '40vw',
-    marginTop: 20,
-    marginBottom: 20,
+    maxWidth: '50%',
     "@media (pointer:coarse)": {
       width: '60vw',
+      maxWidth: '100%',
     }
   }
 })
