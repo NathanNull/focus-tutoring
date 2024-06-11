@@ -1,5 +1,5 @@
 import { createUseStyles } from 'react-jss';
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.svg';
 import classroomImage from '../assets/classroom.jpg';
 
 function Footer() {

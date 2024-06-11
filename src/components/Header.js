@@ -2,10 +2,10 @@ import { createUseStyles } from 'react-jss';
 import logo from '../assets/logo.svg'
 import classroomImage from '../assets/classroom.jpg';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-function LinkBar({ styles, innerClass }) {
-  return <div className={innerClass}>
+function LinkBar({ styles, innerClass, innerRef }) {
+  return <div className={innerClass} ref={innerRef}>
     <a className={styles.link} href="#/about">About The Tutor</a>
     <a className={styles.link} href="#/services">Services</a>
     <a className={styles.link} href="#/contact">Contact</a>
@@ -14,9 +14,25 @@ function LinkBar({ styles, innerClass }) {
 
 function Header({ children, long_hero_section = false }) {
   const styles = useStyles(long_hero_section);
+  /**
+   * @type {React.MutableRefObject<HTMLDivElement>}
+   */
+  const linkBarMobile = useRef(null);
   // For whatever reason, setting this to true initially makes
   // the program believe it's false. It's fine.
   const [isMenuOpen, setMenuOpen] = useState(true);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+    if (isMenuOpen) {
+      linkBarMobile.current.style.display = "flex"
+    } else {
+      linkBarMobile.current.addEventListener('animationend', () => {
+        linkBarMobile.current.style.display = "none"
+      }, {once: true})
+    }
+  }
+
   return (
     <>
       <div className={styles.navbar}>
@@ -25,12 +41,16 @@ function Header({ children, long_hero_section = false }) {
           <a href="#/">
             <img src={logo} alt="logo" className={styles.logo} />
           </a>
-          <div className={styles.menuIcon} onClick={() => setMenuOpen(!isMenuOpen)}>
+          <div className={styles.menuIcon} onClick={toggleMenu}>
             <MenuIcon htmlColor='white' />
           </div>
           <LinkBar styles={styles} innerClass={styles.linkBar} />
         </div>
-        <LinkBar styles={styles} innerClass={`${styles.linkBarMobile} ${isMenuOpen ? styles.animateBackwards : styles.animateForwards}`} />
+        <LinkBar
+          styles={styles}
+          innerClass={`${styles.linkBarMobile} ${isMenuOpen ? styles.animateBackwards : styles.animateForwards}`}
+          innerRef={linkBarMobile}
+        />
       </div>
       <div className={styles.homeView}>
         {children}
@@ -41,13 +61,12 @@ function Header({ children, long_hero_section = false }) {
 
 const useStyles = createUseStyles({
   '@keyframes slideDown': {
-    from: { maxHeight: 0, opacity: 0 },
-    to: { maxHeight: '200px', opacity: 1 },
+    '0%': { maxHeight: 0, opacity: 0 },
+    '100%': { maxHeight: '200px', opacity: 1 },
   },
   '@keyframes slideUp': {
     '0%': { maxHeight: '200px', opacity: 1 },
-    '99%': { maxHeight: 0, opacity: 0 },
-    '100%': { maxHeight: 0, opacity: 0, display: 'none' },
+    '100%': { maxHeight: 0, opacity: 0 },
   },
   navbar: {
     width: '100%',
@@ -90,7 +109,7 @@ const useStyles = createUseStyles({
     },
   },
   linkBarMobile: {
-    display: 'flex',
+    display: 'none',
     backgroundColor: '#202020',
     flexDirection: 'column',
     justifyContent: 'end',
