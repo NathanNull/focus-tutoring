@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.7be9dba7.css",
-    "main.js": "/static/js/main.81a7d0ae.js",
+    "main.js": "/static/js/main.fc76413b.js",
     "static/media/tutor_photo_nathan.jpg": "/static/media/tutor_photo_nathan.5faf3565bfa6e59a49eb.jpg",
     "static/media/logo.svg": "/static/media/logo.a6cb3bd10e7b83c63d4f309f8fd21ba5.svg",
     "static/media/classroom.jpg": "/static/media/classroom.43209b6be0233df02414.jpg",
     "index.html": "/index.html",
     "main.7be9dba7.css.map": "/static/css/main.7be9dba7.css.map",
-    "main.81a7d0ae.js.map": "/static/js/main.81a7d0ae.js.map"
+    "main.fc76413b.js.map": "/static/js/main.fc76413b.js.map"
   },
   "entrypoints": [
     "static/css/main.7be9dba7.css",
-    "static/js/main.81a7d0ae.js"
+    "static/js/main.fc76413b.js"
   ]
 }
