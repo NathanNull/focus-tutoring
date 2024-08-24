@@ -2,7 +2,7 @@ import { createUseStyles } from 'react-jss';
 import logo from '../assets/logo.svg'
 import classroomImage from '../assets/classroom.jpg';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 function LinkBar({ styles, innerClass, innerRef }) {
   return <div className={innerClass} ref={innerRef}>

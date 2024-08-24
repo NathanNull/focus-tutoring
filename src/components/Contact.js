@@ -44,6 +44,8 @@ function Contact() {
     }
 
     if (valid) {
+      window.gtag('event', 'conversion_event_contact', {'send_to': 'G-JTKDDTKKT7/CONTACT'})
+
       emailjs.send("tutorformsender", "tutorform", {
         sender_name: name.current.value,
         sender_email: email.current.value,
