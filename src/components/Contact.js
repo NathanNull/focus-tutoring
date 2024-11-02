@@ -70,7 +70,7 @@ function Contact() {
       </Header>
       <div className={gStyles.content}>
         <div className={gStyles.header} style={{paddingBottom: 20}}>
-          Questions? Concerns? Suggestions?
+          Interested? Let us know.
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>

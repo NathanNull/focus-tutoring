@@ -17,7 +17,7 @@ function About() {
           <div className={styles.about}>
             <div className={gStyles.header}>Nathan Strong</div>
             <div className={gStyles.subheader}>Tutor</div>
-            Hi! I'm Nathan, a recent high school graduate with a passion for helping others
+            Hi! I'm Nathan, a current student at UFV with a passion for helping others
             succeed academically. I recently graduated from GW Graham with honors and have always excelled
             in and been interested by the field of math. I have won various awards for my abilities,
             most recently including first place in the UFV section of the BC Secondary Schools Math Contest.
